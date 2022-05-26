@@ -1,20 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
-	
-	String foo = "Foo";
-	String baa = "Baa";
 
+	public static void FooBaa() {
 	int count = 1;
-
+	
 	while (count <= 100) {
 
 	    if (count % 3 == 0 && count % 5 == 0) {
-	        System.out.println(foo+baa);
+	        System.out.println("FooBaa");
 	    }
 	    else if (count % 3 == 0) {
-	    	System.out.println(foo);
+	    	System.out.println("Foo");
 	        }
 	    else if (count % 5 == 0) {
-	    	System.out.println(baa);
+	    	System.out.println("Baa");
 	    }
 	    else {
 	    	System.out.println(count);
@@ -22,7 +22,10 @@ public class Main {
 	    count +=1;
 	}
 	
-	public static void main (String[] args) {
-		
 	}
+	
+	public static void main(String[] args) {
+		FooBaa();
+	}
+	
 }
